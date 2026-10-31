@@ -240,4 +240,4 @@ node test/topic-href.test.mjs
 
 MIT (upstream: zsviczian). Modificaciones © 2026 Criptonautas. Consulta [LICENSE](LICENSE).
 
-Texto de este README bajo [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0.txt).
+Nuestros agregados a este README están bajo [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0.txt); el texto del proyecto original conserva su licencia.

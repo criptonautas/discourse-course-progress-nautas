@@ -15,7 +15,7 @@ Server-side Discourse plugin that returns the **true historical read status** of
 - Scoped to the category that has the Index Topic. Its **subcategories are ordinary categories** — normal listing, no Previous / Next, no docs sidebar.
 - Matches both root-relative (`/t/slug/1`) and absolute (`https://host/t/slug/1`) links in the Index Topic.
 - Auto-hidden on topics outside the index (e.g. the Index Topic itself).
-- Labels are localised (`en`, `es`) and carry `arrow-left` / `arrow-right` icons, which the [Phosphor duotone](https://github.com/somos-criptonautas/discourse-phosphor-duotone-icons) component swaps for its own arrows automatically.
+- Labels are localised (`en`, `es`) and carry `arrow-left` / `arrow-right` icons, which the [Phosphor duotone](https://github.com/criptonautas/discourse-phosphor-duotone-icons) component swaps for its own arrows automatically.
 - Glimmer component registered with `renderAfterWrapperOutlet("post-links")` and shown only on post #1; styles scoped under `.course-doc-nav`, overridable from any theme. Visible to anonymous visitors too.
 
 **Sidebar progress markers.** A muted `read/total` count next to course
@@ -90,7 +90,7 @@ hooks:
         cd: $home/plugins
         cmd:
           - git clone https://github.com/discourse/docker_manager.git
-          - git clone https://github.com/somos-criptonautas/discourse-course-progress-nautas.git
+          - git clone https://github.com/criptonautas/discourse-course-progress-nautas.git
 ```
 
 3. Rebuild: `cd /var/discourse && ./launcher rebuild app`

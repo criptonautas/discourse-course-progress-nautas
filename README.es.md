@@ -15,7 +15,7 @@ Plugin de Discourse del lado del servidor que devuelve el **estado de lectura hi
 - Limitado a la categoría que tiene el Index Topic. Sus **subcategorías son categorías normales**: listado normal, sin Anterior / Siguiente, sin barra lateral de docs.
 - Reconoce tanto enlaces relativos a la raíz (`/t/slug/1`) como absolutos (`https://host/t/slug/1`) en el Index Topic.
 - Se oculta automáticamente en temas fuera del índice (por ejemplo, el propio Index Topic).
-- Las etiquetas están localizadas (`en`, `es`) y llevan iconos `arrow-left` / `arrow-right`, que el componente [Phosphor duotone](https://github.com/somos-criptonautas/discourse-phosphor-duotone-icons) sustituye automáticamente por los suyos.
+- Las etiquetas están localizadas (`en`, `es`) y llevan iconos `arrow-left` / `arrow-right`, que el componente [Phosphor duotone](https://github.com/criptonautas/discourse-phosphor-duotone-icons) sustituye automáticamente por los suyos.
 - Componente Glimmer registrado con `renderAfterWrapperOutlet("post-links")` y mostrado solo en el post #1; estilos acotados bajo `.course-doc-nav`, sobrescribibles desde cualquier tema. También visible para visitantes anónimos.
 
 **Marcadores de progreso en la barra lateral.** Un contador atenuado `leídos/total` junto a las categorías
@@ -88,7 +88,7 @@ hooks:
         cd: $home/plugins
         cmd:
           - git clone https://github.com/discourse/docker_manager.git
-          - git clone https://github.com/somos-criptonautas/discourse-course-progress-nautas.git
+          - git clone https://github.com/criptonautas/discourse-course-progress-nautas.git
 ```
 
 3. Reconstruye: `cd /var/discourse && ./launcher rebuild app`

@@ -5,13 +5,18 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   js:
     name: JS unit tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/checkout@v5.1.0
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v5.0.0
         with:
           node-version: 22
       - run: node test/topic-href.test.mjs
